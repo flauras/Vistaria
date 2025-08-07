@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Vistria",
+  base: process.env.VITE_BASE_PATH || "/Vistria",
 }));
